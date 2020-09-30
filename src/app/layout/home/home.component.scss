@@ -1,0 +1,43 @@
+@import './../../../scss/mixins';
+@import './../../../scss/variables';
+
+.title {
+  margin: 50px auto;
+  text-align: center;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+
+  img {
+    @include center(false, true);
+    width: 60vw;
+    left: 5vw;
+    transition: 1s;
+  }
+
+  .yogi {
+    @include center(false, true);
+    width: 35vw;
+    height: 35vw;
+    background-color: rgba(242, 224, 201, 0.5);
+    opacity: 0.8;
+    transition: 1s;
+
+    p {
+      font-size: 2rem;
+      text-align: center;
+      @include center
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import './../../../scss/variables';
+@import './../../../scss/mixins';
+
+.home {
+  font-family: "Peddana";
+  color: $dark-background;
+
+  img {
+    height: 100vh;
+  }
+
+  .info {
+    padding: 50px 200px 20px 70px;
+
+    .title {
+      font-size: 3rem;
+      margin-bottom: 20vh;
+    }
+
+    .about {
+      margin-bottom: 50px;
+
+      .name {
+        font-size: 5rem;
+        margin-bottom: 20px;
+      }
+
+      .whoami {
+        font-size: 1.6rem;
+      }
+    }
+
+    button {
+      height: 50px;
+      width: 200px;
+      background-color: transparent;
+      border: 2px solid $dark-background;
+      margin-right: 20px;
+      font-size: 2rem;
+
+      &:hover {
+        background-color: $dark-background;
+        color: $bright-background;
+      }
+    }
+
+    .social {
+      position: absolute;
+      right: 200px;
+      bottom: 100px;
+
+      fa-icon {
+        color: $dark-background;
+        margin: 5px;
+        cursor: pointer;
+
+        &:hover {
+          color: $secondary-color
+        }
+      }
+    }
+  }
+}

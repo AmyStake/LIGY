@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import './scss/mixins';
+@import './scss/variables';
+@import '~bootstrap/scss/bootstrap';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'David Libre', serif;
+  color: $dark-background;
+}
+
+main {
+  text-align: center;
+  position: relative;
+}
